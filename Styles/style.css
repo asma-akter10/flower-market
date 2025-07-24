@@ -1,0 +1,128 @@
+
+* Shared styles */
+.noto-serif-font{
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.inter-font{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+}
+/* Reset and base */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ html, body{
+        overflow-x: hidden;
+        width: 100%;
+    }
+body{
+    font-size: 22px;
+}
+/* color family */
+.primary-color-1{
+    color: rgba(0, 0, 0, .5);
+}
+.primary-color-2{
+    color: #8987A1;
+}
+.primary-color-3{
+    color: #E94A08;
+}
+/* navbar styles */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1140px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+.nav-contents{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+.nav-content-lists ul{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    gap: 70px;
+}
+a{
+    text-decoration: none;
+}
+.nav-content-lists ul li:nth-child(1) a{
+    font-weight: 700;
+    color: black;
+}
+ 
+.nav-content-lists{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+/* banner styles */
+.banner-container{
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.banner-text h1{
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+
+/* responsive design */
+@media screen and (max-width:576px) {
+    body{
+        font-size: 14px;
+    }
+    .nav-content-lists ul{
+        display: none;
+        gap: 0px;
+    }
+    .navbar{
+        margin: 0 8px;
+        justify-content: space-between;
+        gap: none;
+    }
+    .nav-contents{
+        justify-content: space-between;
+        width: 100%;
+        gap: 0px;
+    }
+    .banner-container{
+        flex-direction: column-reverse;
+        padding: 16px;
+        margin-top: 20px;
+    }
+     .banner-image img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-bottom: 15px;
+    }
+    
+    
+}
