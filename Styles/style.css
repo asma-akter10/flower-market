@@ -91,6 +91,42 @@ a{
     font-size: 3rem;
     margin-bottom: 15px;
 }
+/* plant section styles */
+.plants{
+    max-width: 1140px;
+    margin: 120px auto;
+}
+.plant-section-title{
+    text-align: center;
+}
+.plant-section-title h1{
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+.plant-section-title p{
+    max-width: 880px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.primary-btn{
+    background-color: #E94A08;
+    color: white;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+.card-1{
+    text-align: center;
+}
+.card-1 img{
+    width: 100%;
+}
+
 
 
 /* responsive design */
@@ -122,6 +158,13 @@ a{
         height: auto;
         display: block;
         margin-bottom: 15px;
+    }
+    .plants{
+        margin: 50px auto;
+    }
+    .card-container{
+        grid-template-columns: repeat(2,1fr);
+        margin: 15px;
     }
     
     
