@@ -30,6 +30,7 @@
     }
 body{
     font-size: 22px;
+    background-color: #F6F8FF;
 }
 /* color family */
 .primary-color-1{
@@ -55,6 +56,7 @@ body{
     font-size: 1.1rem;
     margin: 0 auto;
     padding: 0 16px;
+    margin-top: 20px;
 }
 .nav-contents{
     display: flex;
@@ -161,6 +163,15 @@ body{
     position: absolute;
     top: -130px;
     right: -130px;
+    animation: rotate 3s linear infinite;
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
 /* deal section styles */
 .deal{
@@ -228,8 +239,9 @@ body{
 }
 /* join section styles */
 .join{
-    display: grid;
-   justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin: 0 auto;
     width: 100%;
@@ -243,16 +255,29 @@ body{
     margin-bottom: 15px;
 }
 .join-section-container{
-    max-width: 830px;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
 }
 form{
     display: grid;
-    grid-template-columns: 5fr 2fr;
-
+    grid-template-columns: 6fr 2fr;
+    width: 100%;
 }
-input{
-    padding: 12px;
+ input[type="email"] {
+    padding: 15px;
+    /* font-size: 16px; */
     border: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    padding: 15px;
+    /* font-size: 16px; */
+    border: none;
+    width: 100%;
 }
 /* footer styles */
 .footer-container{
@@ -349,10 +374,14 @@ input{
     .join{
         height: 270px;
     }
+    .join-section-container{
+        max-width: 320px;
+    }
     .footer-container{
         grid-template-columns: 1fr;
         gap: 30px;
         margin-left: 15px;
+        margin-right: 15px;
     }
     
     
