@@ -90,7 +90,7 @@ body{
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 110px;
 }
 .banner-text-h1{
     font-size: 3rem;
@@ -123,7 +123,7 @@ body{
 .card-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
+    gap: 20px 15px;
 }
 .card-1{
     text-align: center;
@@ -267,15 +267,13 @@ form{
 }
  input[type="email"] {
     padding: 15px;
-    /* font-size: 16px; */
     border: none;
     width: 100%;
     box-sizing: border-box;
 }
 
-input[type="submit"] {
+input[type="button"] {
     padding: 15px;
-    /* font-size: 16px; */
     border: none;
     width: 100%;
 }
@@ -299,7 +297,7 @@ input[type="submit"] {
 .part-2 li a, .part-3 li a{
      color:  rgba(0, 0, 0, .5);
 }
-.part-4 img{
+.part-4 a img{
     margin-right: 30px;
 }
 
