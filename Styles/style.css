@@ -67,7 +67,7 @@ body{
     display: flex;
     gap: 70px;
 }
-.nav-content-lists ul li a{
+.nav-content-lists ul li a, .part-2 li a, .part-3 li a{
     text-decoration: none;
 }
 .nav-content-lists ul li:nth-child(1) a{
@@ -129,7 +129,7 @@ body{
 .card-1 img{
     width: 100%;
 }
-/* plant lover sectio styles */
+/* plant lover section styles */
 .plant-lover{
     display: flex;
     justify-content: center;
@@ -212,6 +212,8 @@ body{
     justify-content: center;
     position: relative;
     z-index: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .img-1::after, .img-2::after, .last-img::after {
   content: "";
@@ -223,6 +225,57 @@ body{
   background: rgba(0, 0, 0, 0.5);
   z-index: -1;
   border-radius: 12px;
+}
+/* join section styles */
+.join{
+    display: grid;
+   justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 560px;
+    background-size: cover;
+    background-image: url(../assets/news-letter-bg.png);
+    background-position: center;
+}
+.join-section-container h1{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.join-section-container{
+    max-width: 830px;
+}
+form{
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+
+}
+input{
+    padding: 12px;
+    border: none;
+}
+/* footer styles */
+.footer-container{
+    display: grid;
+    grid-template-columns: 5fr 2fr 2fr 4fr;
+    gap: 80px;
+    margin: 50px auto;
+    max-width: 1120px;
+}
+.part-2 li, .part-3 li{
+    list-style: none;
+    display: grid;
+    
+}
+.part-2, .part-3{
+    display: grid;
+    gap: 25px;
+}
+.part-2 li a, .part-3 li a{
+     color:  rgba(0, 0, 0, .5);
+}
+.part-4 img{
+    margin-right: 30px;
 }
 
 
@@ -265,9 +318,6 @@ body{
         grid-template-columns: repeat(2,1fr);
         margin: 15px;
     }
-    img{
-        /* width: 100%; */
-    }
     .overlap-image{
         visibility: hidden;
     }
@@ -280,7 +330,7 @@ body{
         width: 100%;
         /* margin: 20px auto; */
     }
-    .plant-lover-text h1, .deal-text h1{
+    .plant-lover-text h1, .deal-text h1, .plant-section-title h1, .banner-text-h1, .join-section-container h1{
         font-size: 24px;
     }
     .deal-image-container{
@@ -290,9 +340,19 @@ body{
     
 .img-1, .img-2, .last-img{
     width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
     .font{
         font-size: 20px;
+    }
+    .join{
+        height: 270px;
+    }
+    .footer-container{
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-left: 15px;
     }
     
     
